@@ -403,7 +403,8 @@ display: -webkit-flex;
 /* Small screens (mobile devices) */
 @media (max-width: 767px) {
  .main-container {
-   max-width: 100%; /* Full width for mobile */
+   max-width: 360px; /* Adjust max-width for tablets */
+   width: 100%;
    margin-top: 12px; /* Further increase top margin */
    padding: 15px; /* Increase padding for mobile */
  }
@@ -470,7 +471,7 @@ section {
 /* Medium screens (tablets) */
 @media (min-width: 768px) and (max-width: 1023px) {
  .section-content {
-   max-width: 90%; /* Adjust max-width for tablets */
+   max-width: 100%; /* Adjust max-width for tablets */
    margin-top: 12px; /* Slightly increase top margin */
    padding: 10px; /* Add padding for spacing */
  }
@@ -480,7 +481,9 @@ section {
 /* Small screens (mobile devices) */
 @media (max-width: 767px) {
  .section-content {
-   max-width: 100%; /* Full width for mobile */
+   max-width: 320px; /* Full width for mobile */
+   width: 100%;
+
    margin-top: 15px; /* Further increase top margin */
    padding: 12px; /* Increase padding for mobile */
  }
