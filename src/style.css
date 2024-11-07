@@ -201,9 +201,6 @@ a:hover {
 
 }
 
-.header-text, .welcome-content {
-  font-size: 1.5rem; /* Adjust the text size as needed */
-}
 
 .flex-column {
   margin-bottom: 20px; /* Space between text blocks */
@@ -255,7 +252,6 @@ a:hover {
 /* Small screens (mobile devices) */
 @media (max-width: 767px) {
  .header-text {
-   font-size: 12px; /* Adjust font size for mobile */
  }
 }
 
@@ -294,6 +290,7 @@ a:hover {
    max-width: 300px;
    width: 100%;
    margin-top: 20%;
+   font-size: 18px;
  }
 }
 
