@@ -147,8 +147,10 @@ a:hover {
 }
 
 .header-text {
+  position: absolute;
+  top: 2%;
   margin-top: -24;
-  font-size: 2.5vw;
+  font-size: 2vw;
   line-height: 1.2;
   text-align: center;
 }
@@ -161,27 +163,49 @@ a:hover {
 }
 
 .flex-column-1 {
+  position:absolute;
+  top:42%;
+
+  left: 16%;
   max-width: 300px;
   text-align: center;
   flex: 1 1 auto;
 }
 .flex-column-2 {
+  position:absolute;
+  top:44%;
+  right: 14%;
   max-width: 300px;
   text-align: left;
   flex: 1 1 auto;
 }
 
 /* Responsive Adjustments for Banner */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 780px) {
   .banner-content {
     padding: 10px;
   }
   .header-text {
-    font-size: 5vw;
+    font-size: 3vw;
   }
   .welcome-content {
     flex-direction: column;
     margin-top: 10%;
+  }
+  .flex-column-1{
+    top:  40%;
+    left: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-column-2{
+    top: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -215,34 +239,104 @@ a:hover {
 
 /* Profiles Section */
 .profile-list {
-  max-width: 1000px;
   width: 100%;
   list-style: none;
   padding: 0;
   margin: 0 auto;
 }
-
 .profile-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-justify-content: center;
+     -ms-flex-pack: center;
+         justify-content: center;
+
+
+  text-align: left;
   padding: 10px 5px;
   border-bottom: 1px solid #333;
-}
+ }
 
-.profile-list li:last-child {
-  border-bottom: none;
-}
 
-@media only screen and (max-width: 767px) {
+
+ /* Small screens (mobile devices) */
+ @media (max-width: 767px) {
   .profile-list li {
-    padding: 6px 3px;
-    font-size: 14px;
+    padding: 6px 3px; /* Adjust padding for mobile devices */
+    font-size: 14px; /* Adjust font size for mobile */
   }
-}
+ }
+
+
+
+
+ .profile-list li:last-child {
+  border-bottom: none; /* Remove border from the last item */
+ }
+
+
+ .left-text {
+  max-width: 300px;
+  width: 100%;
+ }
+
+
+
+
+ .right-text {
+  max-width: 600px;
+  width: 100%;
+
+
+ }
+
+
+
+
+ .history-entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+     -ms-flex-pack: start;
+         justify-content: flex-start;
+  -webkit-align-items: center;
+     -ms-flex-align: center;
+         align-items: center;
+  margin-bottom: 5px; /* Space between history entries */
+ }
+
+
+ /* Medium screens (tablets) */
+
+ /* Small screens (mobile devices) */
+ @media (max-width: 767px) {
+  .history-entry {
+    margin-bottom: 10px; /* Increase margin for mobile devices */
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+ }
+
+
+ .year {
+  max-width: 60px;
+  width: 100%; /* Fixed width for the year */
+  font-weight: bold; /* Bold for visibility */
+ }
+
+
+ .accomplishment {
+  max-width: 300px;
+  width: 100%;
+ }
+
 
 /* Footer */
 .footer-content {
+  max-width: 40%;
   width: 100%;
   text-align: center;
   padding: 20px;
