@@ -178,10 +178,10 @@ a:hover {
 .banner-content {
   max-width: 1090px;
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   margin: 0 auto;
 
   z-index: 2; /* Ensure content is above the background */
@@ -256,6 +256,7 @@ a:hover {
  display: -ms-flexbox;
  display: -webkit-flex;
  display: flex;
+ flex-direction: row;
  -webkit-justify-content: space-between;
     -ms-flex-pack: distribute;
         justify-content: space-between;
