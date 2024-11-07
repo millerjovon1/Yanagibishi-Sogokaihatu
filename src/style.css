@@ -228,7 +228,7 @@ a:hover {
 /* Responsive Main Content */
 @media only screen and (max-width: 767px) {
   .main-container {
-    max-width: 360px;
+    max-width: 400px;
     margin-top: 12px;
   }
 }
