@@ -165,13 +165,28 @@ a:hover {
     position: relative;
     background: linear-gradient(rgba(3, 3, 3, 0.56), rgba(0, 0, 0, 0.56)),
                 url('./images/24181031_m.jpg'); /* Dark overlay + Background image */
-    background-size: cover; /* Ensures the image fully covers the banner */
+    background-size: cover; /* Default for larger screens */
     background-position: center; /* Center the image */
     background-attachment: fixed; /* Keeps the background image fixed during scrolling */
     background-repeat: no-repeat; /* Prevents the image from repeating */
-    height: 100vh; /* Set the height of the banner */
+    height: 100vh; /* Full viewport height */
     color: white; /* Text color */
     z-index: 1; /* Make sure it's above other content */
+  }
+
+  /* Fix for Safari on iOS */
+  @supports (-webkit-overflow-scrolling: touch) {
+    .banner {
+      background-attachment: scroll; /* Disable fixed background for iOS Safari */
+    }
+  }
+
+  /* Mobile-specific adjustments */
+  @media (max-width: 767px) {
+    .banner {
+
+      height: auto; /* Allow height to adjust based on content */
+    }
   }
 
 /* Content inside the banner */
