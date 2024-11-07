@@ -156,28 +156,34 @@ a:hover {
 }
 
 .welcome-content {
+  max-width: 80%;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 .flex-column-1 {
-  position:absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* position:relative;
   top:42%;
-
-  left: 16%;
+  left: 16%; */
   max-width: 300px;
   text-align: center;
-  flex: 1 1 auto;
+
 }
 .flex-column-2 {
-  position:absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position:relative;
   top:44%;
-  right: 14%;
+  right: 14%; */
   max-width: 300px;
   text-align: left;
-  flex: 1 1 auto;
 }
 
 /* Responsive Adjustments for Banner */
@@ -189,24 +195,14 @@ a:hover {
     font-size: 3vw;
   }
   .welcome-content {
-    flex-direction: column;
-    margin-top: 10%;
-  }
-  .flex-column-1{
-    top:  40%;
-    left: 33%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .flex-column-2{
-    top: 80%;
-    display: flex;
+    position: relative;
+    bottom:-40%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 4px;
   }
+
 }
 
 /* Main Container */
