@@ -301,7 +301,11 @@ a:hover {
   width: 100%;
  }
 
+.company-tag{
+  display: flex;
+  justify-content: flex-start;
 
+}
 
 
  .right-text {
