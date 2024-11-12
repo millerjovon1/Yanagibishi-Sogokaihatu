@@ -42,6 +42,9 @@ body {
 .center-text {
   text-align: center;
 }
+.m-left-none{
+  margin-left:-2%;
+}
 
 .margin-top {
   margin-top: 4px;
@@ -214,15 +217,35 @@ a:hover {
   color: #222;
   margin: 0 auto;
   margin-top: 8px;
-  background-color: rgba(81, 80, 80, 0.61);
+  background-color:rgba(81, 80, 80, 0.293)
 }
 
 .section-content {
-  width: 90%;
+  width: 80%;
   margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
-  background-color: rgba(169, 169, 169, 0.61);
+  background-color: rgba(169, 169, 169, 0.566);
+}
+
+.section-text-1{
+  width:90%;
+  border-radius: 8px;
+  margin: 0 auto;
+  word-wrap: normal;
+
+}
+.youtube{
+  width: 100%;
+
+
+}
+#section-text-2{
+  width: 60%;
+  border-radius: 8px;
+  margin: 0 auto;
+  word-wrap: normal;
+
 }
 
 /* Responsive Main Content */
@@ -315,25 +338,23 @@ a:hover {
 
 
  .year {
-  max-width: 60px;
-  width: 100%; /* Fixed width for the year */
+  margin-right: 4%;
   font-weight: bold; /* Bold for visibility */
  }
 
 
  .accomplishment {
-  max-width: 300px;
   width: 100%;
  }
 
 
 /* Footer */
 .footer-content {
-  max-width: 40%;
+  max-width: 30%;
   width: 100%;
   text-align: center;
   padding: 20px;
-  color:black;
+  color:white;
 }
 
 .click-me {
