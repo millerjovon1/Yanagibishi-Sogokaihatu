@@ -390,14 +390,26 @@ a:hover {
   padding: 4px;
   margin: 0 auto;
   text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
-.click-btn{
+
+.click-btn {
   text-decoration: none;
-  color:white;
+  color: white;
   font-weight: bold;
-
-
+  transition: color 0.3s ease;
 }
+
+.click-me:hover {
+  background-color: rgb(200, 0, 0); /* Slightly lighter red */
+  transform: scale(1.05); /* Subtle zoom effect */
+}
+
+.click-btn:hover {
+  text-decoration: none; /* Prevent underline on hover */
+  color: #f0f0f0; /* Slightly lighter text color */
+}
+
 
 @media only screen and (max-width: 767px) {
   .footer-content {
