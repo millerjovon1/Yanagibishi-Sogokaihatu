@@ -302,8 +302,11 @@ a:hover {
  }
 
 .company-tag{
+  width: 100%;
   display: flex;
   justify-content: flex-start;
+  gap: 12px;
+  font-weight: bold;
 
 }
 
@@ -351,6 +354,21 @@ a:hover {
   width: 100%;
  }
 
+
+ .apply-content{
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(169, 169, 169, 0.566); }
+
+  .apply-section{
+
+  }
 
 /* Footer */
 .footer-content {
